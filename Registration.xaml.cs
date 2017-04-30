@@ -37,15 +37,7 @@ namespace PointOfSaleManagementSys
             }
         }
 
-        private void Login_Click(object sender, RoutedEventArgs e)
-        {
-
-            Login login = new Login();
-            login.Show();
-            Close();
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void BTN_Reset_Click(object sender, RoutedEventArgs e)
         {
             Reset();
         }
@@ -59,12 +51,12 @@ namespace PointOfSaleManagementSys
             passwordBoxConfirm.Password = "";
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void Window_Close(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
-        private void Submit_Click(object sender, RoutedEventArgs e)
+        private void BTN_Confirm_Click(object sender, RoutedEventArgs e)
         {
             if (textBoxEmail.Text.Length == 0 || textBoxFirstName.Text.Length == 0 || textBoxLastName.Text.Length == 0)
             {
